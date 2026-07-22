@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Media Bangi | Premium PC Store & Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+<header class="navbar">
+    <div class="logo">
+        <img src="tmblogo.png" alt="Touch Media Bangi Logo" class="logo-img">
+        <span><strong>TOUCH</strong>MEDIA BANGI</span>
+    </div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#utama">Utama</a></li>
+            <li><a href="#servis">Servis</a></li>
+            <li><a href="#hubungi">Hubungi</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section id="utama" class="hero-section">
+        <div class="hero-content">
+            <h1>Bina PC Impian Anda Di <span>Bangi</span></h1>
+            <p>Pakar dalam pemasangan Custom Rig, komponen gaming premium, dan servis baik pulih komputer riba terpantas.</p>
+            <div class="hero-buttons">
+                <a href="#servis" class="btn-primary">Lihat Servis</a>
+                <a href="#hubungi" class="btn-secondary">Hubungi Kami</a>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+   <!-- Gantian bahagian Servis Kami di index.html -->
+<section id="servis" class="services-section">
+    <h2 class="section-title">Servis Kami</h2>
+    
+    <!-- Kad Servis -->
+<div class="services-grid">
+    <!-- Kad 1 -->
+    <div class="service-card" onclick="showDetail('custom')">
+        <i class="fa-solid fa-computer"></i>
+        <h3>Custom PC Build</h3>
+        <p>Perkhidmatan pemasangan PC mengikut bajet dan keperluan anda, disertakan dengan konsultasi percuma.</p>
+        <span class="read-more">Lihat Detail <i class="fa-solid fa-chevron-down"></i></span>
+    </div>
+
+    <!-- Kad 2 -->
+    <div class="service-card" onclick="showDetail('repair')">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h3>Repair & Upgrade</h3>
+        <p>Perkhidmatan penukaran thermal paste, pembersihan habuk, naik taraf SSD/RAM, dan penyelesaian masalah sistem.</p>
+        <span class="read-more">Lihat Detail <i class="fa-solid fa-chevron-down"></i></span>
+    </div>
+
+    <!-- Kad 3 -->
+    <div class="service-card" onclick="showDetail('os')">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Sistem Operasi</h3>
+        <p>Perkhidmatan pemasangan semula Windows rasmi, pemasangan perisian asas, serta pembersihan virus dan malware.</p>
+        <span class="read-more">Lihat Detail <i class="fa-solid fa-chevron-down"></i></span>
+    </div>
+</div>
+
+    <!-- Ruang Perincian (Akan Muncul Di Bawah Kad Apabila Diklik) -->
+<!-- Masukkan tepat di bawah class="services-grid" -->
+     <div id="service-detail-box" class="detail-display-box">
+       <button class="close-btn" onclick="closeDetail()">&times;</button>
+    
+    <div id="detail-custom" class="detail-content">
+        <h3><i class="fa-solid fa-computer"></i> Perincian Custom PC Build</h3>
+        <ul>
+            <li><strong>Konsultasi Percuma:</strong> Pemilihan komponen mengikut bajet dan keperluan anda.</li>
+            <li><strong>Cable Management:</strong> Susunan kabel yang kemas untuk aliran udara yang lebih baik.</li>
+            <li><strong>Stress Test:</strong> Ujian dijalankan sebelum penyerahan bagi memastikan sistem berfungsi dengan stabil.</li>
+        </ul>
+    </div>
+
+    <div id="detail-repair" class="detail-content">
+        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Perincian Repair & Upgrade</h3>
+        <ul>
+            <li><strong>Penukaran Thermal Paste:</strong> Membantu mengurangkan masalah PC atau laptop yang cepat panas.</li>
+            <li><strong>Upgrade SSD / RAM:</strong> Meningkatkan kelajuan boot dan kelancaran multitasking.</li>
+            <li><strong>Troubleshooting:</strong> Mengesan dan menyelesaikan masalah seperti Blue Screen atau tiada paparan.</li>
+        </ul>
+    </div>
+
+    <div id="detail-os" class="detail-content">
+        <h3><i class="fa-solid fa-shield-halved"></i> Perincian Sistem Operasi</h3>
+        <ul>
+            <li><strong>Windows Clean Install:</strong> Format dan pemasangan semula Windows 10 atau 11</li>
+            <li><strong>Driver Setup:</strong> Pemasangan driver perkakasan dan perisian asas.</li>
+            <li><strong>Pembersihan Malware:</strong> Membuang virus dan malware serta mengoptimumkan keselamatan sistem.</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+    <!-- Footer -->
+    <!-- Gantian bahagian Footer di index.html -->
+<footer id="hubungi" class="footer-section">
+    <div class="footer-container">
+        
+        <!-- Kolom 1: Info Kedai -->
+        <div class="footer-info">
+            <div class="logo">TOUCH<span>MEDIA</span></div>
+            <p class="store-desc">Pakar solusi perkakasan komputer, custom rig, dan servis baik pulih laptop premium di area Bangi.</p>
+            <div class="socials">
+                <a href="https://www.facebook.com/touchmediabangi/?locale=ms_MY"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/touchmediabangi/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/60127639964" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Kolom 2: Maklumat Hubungi -->
+        <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> <span>+60 12-345 6789</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span>touchmediabangi@gmail.com</li>
+                <li><i class="fa-solid fa-location-dot"></i> <span>D-3-1 Bangi Gateway, Persiaran Pekeliling, Seksyen 15, 43650 Bandar Baru Bangi, Selangor, Malaysia.</span></li>
+            </ul>
+        </div>
+
+        <!-- Kolom 3: Waktu Operasi -->
+        <div class="footer-hours">
+            <h3>Waktu Operasi</h3>
+            <ul>
+                <li><span class="day">Isnin  :</span> <span class="time">10:00 AM - 7:00 PM</span></li>
+                <li><span class="day">Selasa :</span> <span class="time">10:00 AM - 7:00 PM</span></li>
+                <li><span class="day">Rabu   :</span> <span class="time">10:00 AM - 7:00 PM</span></li>
+                <li><span class="day">Khamis :</span> <span class="time">10:00 AM - 7:00 PM</span></li>
+                <li><span class="day">Jumaat :</span> <span class="time">10:00 AM - 7:00 PM</span></li>
+                <li><span class="day">Sabtu  :</span> <span class="time">10:00 AM - 7:00 PM</span></li>
+                <li><span class="day">Ahad   :</span> <span class="time">10:00 AM - 7:00 PM</span></li>
+                
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Barisan Hak Cipta & Pautan Staf -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Touch Media Bangi. Hak Cipta Terpelihara.</p>
+    </div>
+   </footer>
+
+   <!-- Pastikan baris ini ada di bawah sekali sebelum </body> -->
+    <script src="script.js"></script>
+</body>
+</html>

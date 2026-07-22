@@ -1,0 +1,400 @@
+/* --- Core Theme Settings --- */
+/* --- Gantikan bahagian :root di atas sekali fail style.css --- */
+:root {
+    --bg-dark: #f2f2f2;        /* Warna latar belakang baharu pilihan anda */
+    --bg-card: #cccccc;        /* Kad ditukar kepada putih supaya kontras */
+    --accent-cyan: #595959;    /* Ditukar kepada cyan gelap sedikit untuk kejelasan teks */
+    --text-white: #ffffff;     /* Teks utama ditukar kepada warna gelap */
+    --text-gray: #7f7f7f;      /* Teks huraian ditukar kepada kelabu gelap */
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    scroll-behavior: smooth; /* Kesan skrol lancar */
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    line-height: 1.6;
+}
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+/* Susun logo dan teks secara mendatar */
+.logo {
+    display: flex;
+    align-items: center; /* Sejajarkan gambar & teks di tengah secara menegak */
+    gap: 10px;           /* Jarak antara gambar logo dan teks */
+    color: #ffffff;
+}
+
+/* Tetapkan saiz gambar logo */
+.logo-img {
+    height: 35px;        /* Ubah nilai ini jika mahu logo lebih besar/kecil */
+    width: auto;
+    object-fit: contain;
+}
+
+.logo span { color: var(--accent-cyan); }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover { color: var(--accent-cyan); }
+
+.nav-links .btn-staff {
+    background-color: rgba(0, 242, 254, 0.1);
+    color: var(--accent-cyan);
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--accent-cyan);
+}
+
+.nav-links .btn-staff:hover {
+    background-color: var(--accent-cyan);
+    color: var(--bg-dark);
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    
+    /* Tetapan gambar latar belakang di tengah-tengah (center) */
+    background-image: linear-gradient(rgba(7, 7, 10, 0.75), rgba(7, 7, 10, 0.85)), url('tmblogo.png');
+    background-position: center center; /* Memastikan gambar di tengah secara mendatar & menegak */
+    background-repeat: no-repeat;
+    background-size: cover; /* Atau guna 'contain' jika tak mahu gambar terpotong */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span { color: var(--accent-cyan); }
+
+.hero-content p {
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--accent-cyan);
+    color: var(--bg-dark);
+}
+
+.btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+
+.btn-secondary {
+    border: 1px solid var(--text-gray);
+    color: var(--text-white);
+}
+
+.btn-secondary:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+
+/* --- Services Section --- */
+.services-section {
+    padding: 100px 8%;
+    background-color: #0b0b12;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-cyan);
+    margin: 10px auto 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--bg-card);
+    border: 1px solid #19192e;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: var(--accent-cyan);
+    margin-bottom: 20px;
+}
+
+.service-card h3 { margin-bottom: 15px; font-size: 20px; }
+.service-card p { color: var(--text-gray); font-size: 14px; }
+
+/* --- Footer --- */
+/* --- Footer Section Updated --- */
+.footer-section {
+    background-color: var(--bg-card);
+    border-top: 1px solid #ffffff;
+    padding: 80px 8% 30px;
+    color: var(--text-white);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Kolom 1: Info */
+.footer-info .logo {
+    margin-bottom: 15px;
+}
+.store-desc {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+.footer-info .socials {
+    display: flex;
+    gap: 15px;
+}
+.footer-info .socials a {
+    width: 38px;
+    height: 38px;
+    background-color: #141423;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: var(--transition);
+}
+.footer-info .socials a:hover {
+    background-color: var(--accent-cyan);
+    color: var(--bg-dark);
+    transform: translateY(-3px);
+}
+
+/* Kolom 2 & 3: Teks & Tajuk */
+.footer-contact h3, .footer-hours h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+.footer-contact h3::after, .footer-hours h3::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent-cyan);
+    margin-top: 8px;
+}
+
+.footer-contact ul, .footer-hours ul {
+    list-style: none;
+}
+
+.footer-contact ul li {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-contact ul li i {
+    color: var(--accent-cyan);
+    margin-top: 4px;
+}
+
+.footer-hours ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 12px;
+    border-bottom: 1px dashed #141423;
+    padding-bottom: 8px;
+}
+
+.footer-hours .time {
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+/* Barisan Bawah Footer */
+.footer-bottom {
+    border-top: 1px solid #141423;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13px;
+    color: var(--text-gray);
+}
+
+.staff-portal-link {
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.staff-portal-link:hover {
+    color: var(--accent-cyan);
+}
+
+/* Responsive Setup */
+@media (max-width: 768px) {
+    .footer-section { padding: 60px 5% 30px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+}
+/* Styling Kotak Perincian di Bawah Kad */
+.service-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan) !important;
+}
+
+/* Kotak Perincian Tersembunyi Secara Asal */
+.detail-display-box {
+    display: none;
+    background-color: var(--bg-card);
+    border: 1px solid var(--accent-cyan);
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 40px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.detail-content {
+    display: none;
+}
+
+.detail-content.active {
+    display: block;
+}
+
+.detail-content h3 {
+    font-size: 22px;
+    color: var(--accent-cyan);
+    margin-bottom: 20px;
+}
+
+.detail-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-content ul li {
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    color: var(--text-white);
+}
+
+.detail-content ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-weight: bold;
+}
+
+/* Butang Tutup (X) */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: var(--accent-cyan);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

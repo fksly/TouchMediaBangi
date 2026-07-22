@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair & Upgrade | Touch Media Bangi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Gaya tambahan khusus untuk halaman info servis */
+        .detail-container {
+            padding: 120px 8% 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .detail-header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #141423;
+            padding-bottom: 20px;
+        }
+        .detail-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .detail-header i {
+            color: var(--accent-cyan);
+            margin-right: 10px;
+        }
+        .service-list {
+            display: grid;
+            gap: 25px;
+        }
+        .item-box {
+            background-color: var(--bg-card);
+            border: 1px solid #19192e;
+            padding: 25px;
+            border-radius: 10px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .item-icon {
+            font-size: 24px;
+            color: var(--accent-cyan);
+            background: rgba(0, 242, 254, 0.1);
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .item-text h3 {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .item-text p {
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Halaman Kandungan Info -->
+    <div class="detail-container">
+        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kembali ke Laman Utama</a>
+        
+        <div class="detail-header">
+            <h1><i class="fa-solid fa-screwdriver-wrench"></i> Perincian Servis Repair & Upgrade</h1>
+            <p>Senarai penyelesaian teknikal perkakasan komputer dan laptop di Touch Media Bangi.</p>
+        </div>
+
+        <div class="service-list">
+            <!-- Item 1 -->
+            <div class="item-box">
+                <div class="item-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="item-text">
+                    <h3>Penukaran Thermal Paste & Pembersihan Habuk</h3>
+                    <p>Mengatasi masalah suhu PC/laptop yang terlalu panas (overheating). Kami menggunakan thermal paste gred premium untuk memastikan prestasi pelesapan haba yang optimum.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item-box">
+                <div class="item-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="item-text">
+                    <h3>Naik Taraf Storan (SSD Upgrade)</h3>
+                    <p>Menukarkan hard disk (HDD) lama anda kepada Solid State Drive (SSD) jenis SATA atau NVMe M.2. Menjadikan sistem Windows boot sepantas 10 saat dan mempercepatkan respons perisian.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item-box">
+                <div class="item-icon"><i class="fa-solid fa-memory"></i></div>
+                <div class="item-text">
+                    <h3>Naik Taraf Memori (RAM Upgrade)</h3>
+                    <p>Menambah kapasiti RAM (DDR4 / DDR5) untuk kelancaran tugasan multi-tasking, penyuntingan video yang lebih stabil, serta mengurangkan sangkut (*stuttering*) ketika bermain permainan video.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item-box">
+                <div class="item-icon"><i class="fa-solid fa-bug"></i></div>
+                <div class="item-text">
+                    <h3>Troubleshooting Ralat & Kerosakan Komponen</h3>
+                    <p>Diagnosis menyeluruh bagi masalah komputer seperti tiada paparan pada skrin (*no display*), tersekat pada skrin biru (*blue screen of death*), atau masalah sistem terus terpadam sendiri.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
