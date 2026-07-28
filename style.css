@@ -172,12 +172,18 @@ body {
 }
 
 .service-card {
-    background-color: var(--bg-card);
-    border: 1px solid #19192e;
-    padding: 40px 30px;
-    border-radius: 12px;
-    text-align: center;
-    transition: var(--transition);
+  /* Gabungkan overlay gelap + gambar */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pcbuildbackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  border: 1px solid #19192e;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition);
+  color: white;
 }
 
 .service-card:hover {
@@ -195,24 +201,6 @@ body {
 .service-card p { color: var(--text-gray); font-size: 14px; }
 
 /* Tukar '.service-box' dengan nama class kotak anda */
-.service-box {
-  /* Gantikan 'background.jpg' dengan nama fail gambar anda */
-  /* Kita tambah 'linear-gradient' untuk buat 'overlay' hitam 50% telus */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pcbuildbackground.jpg');
-  
-  /* Kod wajib untuk gambar */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-  /* Kekalkan kod reka bentuk asal kotak anda */
-  border-radius: 15px; /* atau 'border-radius' asal anda */
-  padding: 40px;      /* atau 'padding' asal anda */
-  color: white;       /* Pastikan teks putih */
-  
-  /* Tambah 'box-shadow' untuk bagi nampak timbul */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
 
 /* --- Footer --- */
 /* --- Footer Section Updated --- */
