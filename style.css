@@ -199,6 +199,11 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('osbackground.jpg');
 }
 
+/* Gambar Khas untuk Kotak 4 */
+.service-card.laptop-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('laptopbackground.jpg');
+}
+
 .service-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-cyan);
