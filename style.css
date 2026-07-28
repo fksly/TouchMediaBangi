@@ -198,7 +198,7 @@ body {
 .service-box {
   /* Gantikan 'background.jpg' dengan nama fail gambar anda */
   /* Kita tambah 'linear-gradient' untuk buat 'overlay' hitam 50% telus */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pcbuildbackground.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pcbuildbackground.jpg');
   
   /* Kod wajib untuk gambar */
   background-size: cover;
